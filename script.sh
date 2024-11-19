@@ -4,12 +4,15 @@ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.pha
 
 while true; do
     if php wp-cli.phar core is-installed --allow-root 2>/dev/null; then
-        php wp-cli.phar plugin install redis-cache --allow-root
-        php wp-cli.phar plugin activate redis-cache --allow-root
-        php wp-cli.phar redis enable --allow-root
+        if [ -d "/var/www/html/wp-content/plugins/redis-cache" ]; then
+            echo "Redis Cache plugin is OK."
+        else
+            php wp-cli.phar plugin install redis-cache --allow-root
+            php wp-cli.phar plugin activate redis-cache --allow-root
+            php wp-cli.phar redis enable --allow-root
+        fi
         break
     else
-        # WP is not installed. Wait and try again.
         echo "WordPress not installed. Retrying in 30 seconds..."
         sleep 30
     fi
