@@ -1,5 +1,7 @@
 #!/bin/bash
 
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+
 while true; do
     if php wp-cli.phar core is-installed --allow-root 2>/dev/null; then
         php wp-cli.phar plugin install redis-cache --allow-root
