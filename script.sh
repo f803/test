@@ -6,6 +6,7 @@ while true; do
     if php wp-cli.phar core is-installed --allow-root 2>/dev/null; then
         if [ -d "/var/www/html/wp-content/plugins/redis-cache" ]; then
             echo "Redis Cache plugin is OK."
+            break
         else
             php wp-cli.phar plugin install redis-cache --allow-root
             php wp-cli.phar plugin activate redis-cache --allow-root
