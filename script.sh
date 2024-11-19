@@ -11,6 +11,7 @@ while true; do
             php wp-cli.phar plugin install redis-cache --allow-root
             php wp-cli.phar plugin activate redis-cache --allow-root
             php wp-cli.phar redis enable --allow-root
+            break
         fi
         break
     else
