@@ -9,9 +9,6 @@ else
     curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
     chmod +x wp-cli.phar
 	break
-    else
-        echo "Ошибка при загрузке wp-cli.phar. Проверьте соединение или URL."
-    fi
 fi
 
 chown -R www-data:www-data /var/www/html
