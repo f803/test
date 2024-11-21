@@ -1,6 +1,29 @@
 #!/bin/bash
 
-curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+/usr/local/bin/docker-entrypoint.sh php-fpm &
+
+if [[ -f "wp-cli.phar" ]]; then
+    echo "WP-CLI уже установлен. Скачивание пропущено."
+else
+    echo "WP-CLI не найден. Начинаем загрузку..."
+    curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+    if [[ $? -eq 0 ]]; then
+        echo "wp-cli.phar успешно загружен."
+    else
+        echo "Ошибка при загрузке wp-cli.phar. Проверьте соединение или URL."
+    fi
+fi
+
+
+
+
+
+
+
+
+
+
+
 
 while true; do
     if php wp-cli.phar core is-installed --allow-root 2>/dev/null; then
