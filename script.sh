@@ -4,12 +4,10 @@
 
 if [[ -f "wp-cli.phar" ]]; then
     echo "WP-CLI уже установлен. Скачивание пропущено."
-    break
 else
     echo "WP-CLI не найден. Начинаем загрузку..."
     curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-    if [[ $? -eq 0 ]]; then
-        echo "wp-cli.phar успешно загружен."
+    chmod +x wp-cli.phar
 	break
     else
         echo "Ошибка при загрузке wp-cli.phar. Проверьте соединение или URL."
