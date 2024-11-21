@@ -43,3 +43,5 @@ while true; do
         sleep 30
     fi
 done
+
+wait
