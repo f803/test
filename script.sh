@@ -11,29 +11,31 @@ else
 	break
 fi
 
-su www-data
 chown -R www-data:www-data /var/www/html
 find /var/www/html -type d -exec chmod 755 {} \;
 find /var/www/html -type f -exec chmod 644 {} \;
 
 
 while true; do
-    if php wp-cli.phar core is-installed 2>/dev/null; then
-        if php wp-cli.phar plugin is-active redis-cache 2>/dev/null && php wp-cli.phar redis status 2>/dev/null | grep -q "Status: Connected"; then
+    if su -s /bin/bash www-data -c "php /var/www/html/wp-cli.phar core is-installed" 2>/dev/null; then
+        echo "WordPress is installed."
+
+        if su -s /bin/bash www-data -c "php /var/www/html/wp-cli.phar plugin is-active redis-cache" 2>/dev/null && \
+           su -s /bin/bash www-data -c "php /var/www/html/wp-cli.phar redis status" 2>/dev/null | grep -q "Status: Connected"; then
             echo "Redis Cache plugin is already installed, active, and enabled. Exiting..."
             break
         fi
 
         if [ ! -d "/var/www/html/wp-content/plugins/redis-cache" ]; then
             echo "Installing Redis Cache plugin..."
-            php wp-cli.phar plugin install redis-cache
+            su -s /bin/bash www-data -c "php /var/www/html/wp-cli.phar plugin install redis-cache"
         fi
 
         echo "Activating Redis Cache plugin..."
-        php wp-cli.phar plugin activate redis-cache
+        su -s /bin/bash www-data -c "php /var/www/html/wp-cli.phar plugin activate redis-cache"
 
         echo "Enabling Redis Cache..."
-        php wp-cli.phar redis enable
+        su -s /bin/bash www-data -c "php /var/www/html/wp-cli.phar redis enable"
 
         echo "Redis Cache plugin has been installed, activated, and enabled. Exiting..."
         break
@@ -42,6 +44,7 @@ while true; do
         sleep 30
     fi
 done
+
 
 
 wait
