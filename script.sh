@@ -1,5 +1,7 @@
 #!/bin/bash
 
+/usr/local/bin/docker-entrypoint.sh php-fpm &
+
 if [[ -f "wp-cli.phar" ]]; then
     echo "WP-CLI уже установлен. Скачивание пропущено."
 else
@@ -7,6 +9,12 @@ else
     curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 	break
 fi
+
+chown -R www-data:www-data /var/www/html
+find /var/www/html -type d -exec chmod 755 {} \;
+find /var/www/html -type f -exec chmod 644 {} \;
+chown www-data:www-data /var/www/html/wp-cli.phar
+chmod 755 /var/www/html/wp-cli.phar
 
 
 while true; do
@@ -37,5 +45,7 @@ while true; do
         sleep 30
     fi
 done
+
+
 
 wait
