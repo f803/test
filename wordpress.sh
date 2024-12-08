@@ -1,5 +1,6 @@
 #!/bin/bash
 
+/usr/local/bin/docker-entrypoint.sh php-fpm &
 
 if [[ -f "wp-cli.phar" ]]; then
     echo "WP-CLI уже установлен. Скачивание пропущено."
