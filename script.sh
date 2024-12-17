@@ -11,12 +11,11 @@ else
 fi
 
 chown -R www-data:www-data /var/www/html
-find /var/www/html -type d -exec chmod 775 {} \;
-find /var/www/html -type f -exec chmod 664 {} \;
+find /var/www/html -type d -exec chmod 777 {} \;
+find /var/www/html -type f -exec chmod 666 {} \;
 chown www-data:www-data /var/www/html/wp-cli.phar
 chmod 775 /var/www/html/wp-cli.phar
 find /var/www/html -type d -exec chmod g+s {} \;
-
 while true; do
     if su -s /bin/bash www-data -c "php /var/www/html/wp-cli.phar core is-installed" 2>/dev/null; then
         echo "WordPress is installed."
