@@ -1,0 +1,128 @@
+A chatbot (originally chatterbot)[1] is a software application or web interface designed to have textual or spoken conversations.[2][3][4] Modern chatbots are typically online and use generative artificial intelligence systems that are capable of maintaining a conversation with a user in natural language and simulating the way a human would behave as a conversational partner. Such chatbots often use deep learning and natural language processing, but simpler chatbots have existed for decades.
+
+Although chatbots have existed since the late 1960s, the field gained widespread attention in the early 2020s due to the popularity of OpenAI's ChatGPT,[5][6] followed by alternatives such as Microsoft's Copilot and Google's Gemini.[7] Such examples reflect the recent practice of basing such products upon broad foundational large language models, such as GPT-4 or the Gemini language model, that get fine-tuned so as to target specific tasks or applications (i.e., simulating human conversation, in the case of chatbots). Chatbots can also be designed or customized to further target even more specific situations and/or particular subject-matter domains.[8]
+
+A major area where chatbots have long been used is in customer service and support, with various sorts of virtual assistants.[9] Companies spanning a wide range of industries have begun using the latest generative artificial intelligence technologies to power more advanced developments in such areas.[8]
+
+History
+Turing test
+In 1950, Alan Turing's famous article "Computing Machinery and Intelligence" was published,[10] which proposed what is now called the Turing test as a criterion of intelligence. This criterion depends on the ability of a computer program to impersonate a human in a real-time written conversation with a human judge to the extent that the judge is unable to distinguish reliably—on the basis of the conversational content alone—between the program and a real human.
+
+Eliza
+The notoriety of Turing's proposed test stimulated great interest in Joseph Weizenbaum's program ELIZA, published in 1966, which seemed to be able to fool users into believing that they were conversing with a real human. However Weizenbaum himself did not claim that ELIZA was genuinely intelligent, and the introduction to his paper presented it more as a debunking exercise:
+
+In artificial intelligence, machines are made to behave in wondrous ways, often sufficient to dazzle even the most experienced observer. But once a particular program is unmasked, once its inner workings are explained, its magic crumbles away; it stands revealed as a mere collection of procedures. The observer says to himself "I could have written that". With that thought, he moves the program in question from the shelf marked "intelligent", to that reserved for curios. The object of this paper is to cause just such a re-evaluation of the program about to be "explained". Few programs ever needed it more.[11]
+
+ELIZA's key method of operation involves the recognition of clue words or phrases in the input, and the output of the corresponding pre-prepared or pre-programmed responses that can move the conversation forward in an apparently meaningful way (e.g. by responding to any input that contains the word 'MOTHER' with 'TELL ME MORE ABOUT YOUR FAMILY').[11] Thus an illusion of understanding is generated, even though the processing involved has been merely superficial. ELIZA showed that such an illusion is surprisingly easy to generate because human judges are ready to give the benefit of the doubt when conversational responses are capable of being interpreted as "intelligent".
+
+Interface designers have come to appreciate that humans' readiness to interpret computer output as genuinely conversational—even when it is actually based on rather simple pattern-matching—can be exploited for useful purposes. Most people prefer to engage with programs that are human-like, and this gives chatbot-style techniques a potentially useful role in interactive systems that need to elicit information from users, as long as that information is relatively straightforward and falls into predictable categories. Thus, for example, online help systems can usefully employ chatbot techniques to identify the area of help that users require, potentially providing a "friendlier" interface than a more formal search or menu system. This sort of usage holds the prospect of moving chatbot technology from Weizenbaum's "shelf ... reserved for curios" to that marked "genuinely useful computational methods".
+
+Early chatbots
+Among the most notable early chatbots are ELIZA (1966) and PARRY (1972).[12][13][14][15] More recent notable programs include A.L.I.C.E., Jabberwacky and D.U.D.E (Agence Nationale de la Recherche and CNRS 2006). While ELIZA and PARRY were used exclusively to simulate typed conversation, many chatbots now include other functional features, such as games and web searching abilities. In 1984, a book called The Policeman's Beard is Half Constructed was published, allegedly written by the chatbot Racter (though the program as released would not have been capable of doing so).[16]
+
+From 1978[17] to some time after 1983,[18] the CYRUS project led by Janet Kolodner constructed a chatbot simulating Cyrus Vance (57th United States Secretary of State). It used case-based reasoning, and updated its database daily by parsing wire news from United Press International. The program was unable to process the news items subsequent to the surprise resignation of Cyrus Vance in April 1980, and the team constructed another chatbot simulating his successor, Edmund Muskie.[19][18]
+
+One pertinent field of AI research is natural-language processing. Usually, weak AI fields employ specialized software or programming languages created specifically for the narrow function required. For example, A.L.I.C.E. uses a markup language called AIML,[3] which is specific to its function as a conversational agent, and has since been adopted by various other developers of, so-called, Alicebots. Nevertheless, A.L.I.C.E. is still purely based on pattern matching techniques without any reasoning capabilities, the same technique ELIZA was using back in 1966. This is not strong AI, which would require sapience and logical reasoning abilities.
+
+Jabberwacky learns new responses and context based on real-time user interactions, rather than being driven from a static database. Some more recent chatbots also combine real-time learning with evolutionary algorithms that optimize their ability to communicate based on each conversation held.
+
+Chatbot competitions focus on the Turing test or more specific goals. Two such annual contests are the Loebner Prize and The Chatterbox Challenge (the latter has been offline since 2015, however, materials can still be found from web archives).[20]
+
+DBpedia created a chatbot during the GSoC of 2017.[21][22][23] It can communicate through Facebook Messenger (see Master of Code Global article).
+
+Modern chatbots based on large language models
+Modern chatbots like ChatGPT are often based on large language models called generative pre-trained transformers (GPT). They are based on a deep learning architecture called the transformer, which contains artificial neural networks. They learn how to generate text by being trained on a large text corpus, which provides a solid foundation for the model to perform well on downstream tasks with limited amounts of task-specific data. Despite criticism of its accuracy and tendency to "hallucinate"—that is, to confidently output false information and even cite non-existent sources—ChatGPT has gained attention for its detailed responses and historical knowledge. Another example is BioGPT, developed by Microsoft, which focuses on answering biomedical questions.[24][25] In November 2023, Amazon announced a new chatbot, called Q, for people to use at work.[26]
+
+Application
+
+This section needs to be updated. Please help update this article to reflect recent events or newly available information. (December 2024)
+See also: Virtual assistant
+Messaging apps
+Many companies' chatbots run on messaging apps or simply via SMS. They are used for B2C customer service, sales and marketing.[27]
+
+In 2016, Facebook Messenger allowed developers to place chatbots on their platform. There were 30,000 bots created for Messenger in the first six months, rising to 100,000 by September 2017.[28]
+
+Since September 2017, this has also been as part of a pilot program on WhatsApp. Airlines KLM and Aeroméxico both announced their participation in the testing;[29][30][31][32] both airlines had previously launched customer services on the Facebook Messenger platform.
+
+The bots usually appear as one of the user's contacts, but can sometimes act as participants in a group chat.
+
+Many banks, insurers, media companies, e-commerce companies, airlines, hotel chains, retailers, health care providers, government entities, and restaurant chains have used chatbots to answer simple questions, increase customer engagement,[33] for promotion, and to offer additional ways to order from them.[34] Chatbots are also used in market research to collect short survey responses.[35]
+
+A 2017 study showed 4% of companies used chatbots.[36] According to a 2016 study, 80% of businesses said they intended to have one by 2020.[37]
+
+As part of company apps and websites
+Previous generations of chatbots were present on company websites, e.g. Ask Jenn from Alaska Airlines which debuted in 2008[38] or Expedia's virtual customer service agent which launched in 2011.[38][39] The newer generation of chatbots includes IBM Watson-powered "Rocky", introduced in February 2017 by the New York City-based e-commerce company Rare Carat to provide information to prospective diamond buyers.[40][41]
+
+Chatbot sequences
+Used by marketers to script sequences of messages, very similar to an autoresponder sequence. Such sequences can be triggered by user opt-in or the use of keywords within user interactions. After a trigger occurs a sequence of messages is delivered until the next anticipated user response. Each user response is used in the decision tree to help the chatbot navigate the response sequences to deliver the correct response message.
+
+Company internal platforms
+Companies have used chatbots for customer support, human resources, or in Internet-of-Things (IoT) projects. Overstock.com, for one, has reportedly launched a chatbot named Mila to attempt to automate certain processes when customer service employees request sick leave.[42] Other large companies such as Lloyds Banking Group, Royal Bank of Scotland, Renault and Citroën are now using chatbots instead of call centres with humans to provide a first point of contact.[citation needed] In large companies, like in hospitals and aviation organizations, chatbots are also used to share information within organizations, and to assist and replace service desks.[citation needed]
+
+Customer service
+Chatbots have been proposed as a replacement for customer service departments.[43]
+
+Deep learning techniques can be incorporated into chatbot applications to allow them to map conversations between users and customer service agents, especially in social media.[44]
+
+In 2019, Gartner predicted that by 2021, 15% of all customer service interactions globally will be handled completely by AI.[45] A study by Juniper Research in 2019 estimates retail sales resulting from chatbot-based interactions will reach $112 billion by 2023.[46]
+
+In 2016, Russia-based Tochka Bank launched a chatbot on Facebook for a range of financial services, including a possibility of making payments.[47] In July 2016, Barclays Africa also launched a Facebook chatbot.[48]
+
+In 2023, US-based National Eating Disorders Association replaced its human helpline staff with a chatbot but had to take it offline after users reported receiving harmful advice from it.[49][50][51]
+
+Healthcare
+See also: Artificial intelligence in healthcare
+Chatbots are also appearing in the healthcare industry.[52][53] A study suggested that physicians in the United States believed that chatbots would be most beneficial for scheduling doctor appointments, locating health clinics, or providing medication information.[54]
+
+ChatGPT is able to answer user queries related to health promotion and disease prevention such as screening and vaccination.[55] WhatsApp has teamed up with the World Health Organization (WHO) to make a chatbot service that answers users' questions on COVID-19.[56]
+
+In 2020, the Government of India launched a chatbot called MyGov Corona Helpdesk,[57] that worked through WhatsApp and helped people access information about the Coronavirus (COVID-19) pandemic.[58][59]
+
+Certain patient groups are still reluctant to use chatbots. A mixed-methods 2019 study showed that people are still hesitant to use chatbots for their healthcare due to poor understanding of the technological complexity, the lack of empathy, and concerns about cyber-security. The analysis showed that while 6% had heard of a health chatbot and 3% had experience of using it, 67% perceived themselves as likely to use one within 12 months. The majority of participants would use a health chatbot for seeking general health information (78%), booking a medical appointment (78%), and looking for local health services (80%). However, a health chatbot was perceived as less suitable for seeking results of medical tests and seeking specialist advice such as sexual health.[60]
+
+The analysis of attitudinal variables showed that most participants reported their preference for discussing their health with doctors (73%) and having access to reliable and accurate health information (93%). While 80% were curious about new technologies that could improve their health, 66% reported only seeking a doctor when experiencing a health problem and 65% thought that a chatbot was a good idea. 30% reported dislike about talking to computers, 41% felt it would be strange to discuss health matters with a chatbot and about half were unsure if they could trust the advice given by a chatbot. Therefore, perceived trustworthiness, individual attitudes towards bots, and dislike for talking to computers are the main barriers to health chatbots.[60][55]
+
+Politics
+See also: Government by algorithm § AI politicians
+In New Zealand, the chatbot SAM – short for Semantic Analysis Machine[61] – has been developed by Nick Gerritsen of Touchtech.[62] It is designed to share its political thoughts, for example on topics such as climate change, healthcare and education, etc. It talks to people through Facebook Messenger.[63][64][65][66]
+
+In 2022, the chatbot "Leader Lars" or "Leder Lars" was nominated for The Synthetic Party to run in the Danish parliamentary election,[67] and was built by the artist collective Computer Lars.[68] Leader Lars differed from earlier virtual politicians by leading a political party and by not pretending to be an objective candidate.[69] This chatbot engaged in critical discussions on politics with users from around the world.[70]
+
+In India, the state government has launched a chatbot for its Aaple Sarkar platform,[71] which provides conversational access to information regarding public services managed.[72][73]
+
+Toys
+Chatbots have also been incorporated into devices not primarily meant for computing, such as toys.[74]
+
+Hello Barbie is an Internet-connected version of the doll that uses a chatbot provided by the company ToyTalk,[75] which previously used the chatbot for a range of smartphone-based characters for children.[76] These characters' behaviors are constrained by a set of rules that in effect emulate a particular character and produce a storyline.[77]
+
+The My Friend Cayla doll was marketed as a line of 18-inch (46 cm) dolls which uses speech recognition technology in conjunction with an Android or iOS mobile app to recognize the child's speech and have a conversation. Like the Hello Barbie doll, it attracted controversy due to vulnerabilities with the doll's Bluetooth stack and its use of data collected from the child's speech.
+
+IBM's Watson computer has been used as the basis for chatbot-based educational toys for companies such as CogniToys,[74] intended to interact with children for educational purposes.[78]
+
+Malicious use
+Malicious chatbots are frequently used to fill chat rooms with spam and advertisements by mimicking human behavior and conversations or to entice people into revealing personal information, such as bank account numbers. They were commonly found on Yahoo! Messenger, Windows Live Messenger, AOL Instant Messenger and other instant messaging protocols. There has also been a published report of a chatbot used in a fake personal ad on a dating service's website.[79]
+
+Tay, an AI chatbot designed to learn from previous interaction, caused major controversy due to it being targeted by internet trolls on Twitter. Soon after its launch, the bot was exploited, and with its "repeat after me" capability, it started releasing racist, sexist, and controversial responses to Twitter users.[80] This suggests that although the bot learned effectively from experience, adequate protection was not put in place to prevent misuse.[81]
+
+If a text-sending algorithm can pass itself off as a human instead of a chatbot, its message would be more credible. Therefore, human-seeming chatbots with well-crafted online identities could start scattering fake news that seems plausible, for instance making false claims during an election. With enough chatbots, it might be even possible to achieve artificial social proof.[82][83]
+
+Data security
+Data security is one of the major concerns of chatbot technologies. Security threats and system vulnerabilities are weaknesses that are often exploited by malicious users. Storage of user data and past communication, that is highly valuable for training and development of chatbots, can also give rise to security threats.[84] Chatbots operating on third-party networks may be subject to various security issues if owners of the third-party applications have policies regarding user data that differ from those of the chatbot.[84] Security threats can be reduced or prevented by incorporating protective mechanisms. User authentication, chat End-to-end encryption, and self-destructing messages are some effective solutions to resist potential security threats.[84]
+
+Limitations of chatbots
+[icon]
+This section needs expansion. You can help by adding to it. (December 2024)
+Chatbots have difficulty managing non-linear conversations that must go back and forth on a topic with a user.[85]
+
+Large language models are more versatile, but require a large amount of conversational data to train. These modeles generate new responses word by word based on user input, are usually trained on a large dataset of natural-language phrases.[3] They sometimes provide plausible-sounding but incorrect or nonsensical answers. They can make up names, dates, historical events, and even simple math problems.[86] When large language models produce coherent-sounding but inaccurate or fabricated content, this is referred to as "hallucinations". When humans use and apply chatbot content contaminated with hallucinations, this results in "botshit".[87] Given the increasing adoption and use of chatbots for generating content, there are concerns that this technology will significantly reduce the cost it takes humans to generate misinformation.[88]
+
+Impact on jobs
+Chatbots and technology in general used to automate repetitive tasks. But advanced chatbots like ChatGPT are also targeting high-paying, creative, and knowledge-based jobs, raising concerns about workforce disruption and quality trade-offs in favor of cost-cutting.[89]
+
+Chatbots are increasingly used by small and medium enterprises, to handle customer interactions efficiently, reducing reliance on large call centers and lowering operational costs.[90]
+
+Prompt engineering, the task of designing and refining prompts (inputs) leading to desired AI-generated responses has quickly gained significant demand with the advent of large language models,[91] although the viability of this job is questioned due to new techniques for automating prompt engineering.[92]
+
+Impact on the environment
+See also: Environmental impacts of artificial intelligence and Data_center § Energy_use
+Generative AI uses a high amount of electric power. Due to reliance on fossil fuels in its generation, this increases air pollution, water pollution, and greenhouse gas emissions. In 2023, a question to ChatGPT consumed on average 10 times as much energy as a Google search.[93] Data centres in general, and those used for AI tasks specifically, consume significant amounts of water for cooling.
